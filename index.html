@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Which student loan plan am I on? — UK Plan 1, 2, 4, 5 and Postgraduate</title>
+<meta name="description" content="Work out which UK student loan plan you repay on. Three questions — where you studied, when your course started, and what you studied — covering Plan 1, 2, 4, 5 and Postgraduate.">
+<meta name="keywords" content="which student loan plan am i on, plan 1 or plan 2 student loan, plan 5 student loan, plan 4 scotland student loan, postgraduate loan repayment, student loan plan finder uk, student loan threshold">
+<link rel="canonical" href="https://uk-student-loan-plan.vercel.app/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2318181b'/%3E%3Cpath d='M14 44V34M26 44V28M38 44V22M50 40V14' stroke='%23fff' stroke-width='7' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='48' r='4.5' fill='%23f59e0b'/%3E%3C/svg%3E">
+<style>
+  :root{--ink:#1c1917;--mid:#57534e;--line:#e7e5e4;--bg:#fafaf9;--card:#fff;--acc:#b45309}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:16px/1.65 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  .wrap{max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem 5rem}
+  .brand{display:flex;align-items:center;gap:.7rem;margin:0 0 2rem;text-decoration:none;color:var(--ink)}
+  .brand svg{width:34px;height:34px;flex:none;border-radius:8px}
+  .brand b{font-size:.95rem;font-weight:600;letter-spacing:-.01em}
+  .brand span{display:block;font-size:.8rem;font-weight:400;color:var(--mid)}
+  h1{font-size:1.85rem;line-height:1.2;margin:0 0 .5rem;letter-spacing:-.02em}
+  h2{font-size:1.15rem;margin:2.5rem 0 .75rem;letter-spacing:-.01em}
+  p{color:var(--mid)}
+  .lede{font-size:1.08rem;color:var(--mid);margin:0 0 1.75rem}
+  a{color:var(--acc)}
+  fieldset{border:1px solid var(--line);border-radius:.6rem;background:var(--card);
+           padding:1rem 1.1rem;margin:0 0 1rem}
+  legend{font-weight:600;font-size:.92rem;padding:0 .4rem}
+  .opts{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.3rem}
+  .opts label{display:inline-flex;align-items:center;gap:.4rem;font-size:.9rem;
+              border:1px solid var(--line);border-radius:.4rem;padding:.4rem .6rem;cursor:pointer}
+  .opts label:hover{border-color:var(--acc)}
+  .opts input{margin:0}
+  #out{margin-top:1.5rem;border:1px solid var(--line);border-radius:.6rem;
+       background:var(--card);padding:1.1rem 1.25rem}
+  #out h2{margin:0 0 .4rem;font-size:1.2rem}
+  #out p{margin:.4rem 0}
+  .rows{margin:.9rem 0 0;border-top:1px solid var(--line)}
+  .row{display:flex;justify-content:space-between;gap:1rem;padding:.45rem 0;
+       border-bottom:1px solid var(--line);font-size:.9rem}
+  .row dt{color:var(--mid);margin:0}
+  .row dd{margin:0;font-weight:600;text-align:right}
+  .scroll{overflow-x:auto}
+  table{border-collapse:collapse;width:100%;font-size:.9rem;margin:.5rem 0}
+  th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-weight:600}
+  .note{border-left:3px solid var(--acc);background:var(--card);padding:.15rem 1rem;
+        margin:1.5rem 0;border-radius:0 .4rem .4rem 0}
+  footer{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--line);
+         font-size:.9rem;color:var(--mid)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<a class="brand" href="https://truetakehome.co.uk/">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true">
+    <rect width="64" height="64" rx="14" fill="#18181b"/>
+    <path d="M14 44V34M26 44V28M38 44V22M50 40V14" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="50" cy="48" r="4.5" fill="#f59e0b"/>
+  </svg>
+  <b>True Take-Home<span>Open tools for UK payroll</span></b>
+</a>
+
+<h1>Which student loan plan am I on?</h1>
+<p class="lede">The plan decides your threshold, and the thresholds differ by
+nearly £9,000 — so the same salary repays very different amounts depending on
+which one you are. Three questions.</p>
+
+<form id="f">
+  <fieldset>
+    <legend>1 · Where were you living when you applied?</legend>
+    <div class="opts">
+      <label><input type="radio" name="nation" value="england" checked> England</label>
+      <label><input type="radio" name="nation" value="wales"> Wales</label>
+      <label><input type="radio" name="nation" value="scotland"> Scotland</label>
+      <label><input type="radio" name="nation" value="ni"> Northern Ireland</label>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>2 · When did your course start?</legend>
+    <div class="opts">
+      <label><input type="radio" name="when" value="pre2012" checked> Before 1 Sept 2012</label>
+      <label><input type="radio" name="when" value="2012to2023"> 1 Sept 2012 – 31 July 2023</label>
+      <label><input type="radio" name="when" value="post2023"> On or after 1 Aug 2023</label>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>3 · What kind of course?</legend>
+    <div class="opts">
+      <label><input type="radio" name="level" value="ug" checked> Undergraduate</label>
+      <label><input type="radio" name="level" value="pg"> Master's or doctoral</label>
+    </div>
+  </fieldset>
+</form>
+
+<div id="out" aria-live="polite"></div>
+
+<h2>The five plans</h2>
+
+<div class="scroll">
+<table id="plans">
+<tr><th>Plan</th><th>Who</th><th>Threshold</th><th>Rate</th></tr>
+<tr><td><strong>Plan 1</strong></td><td>England or Wales before Sept 2012 · Northern Ireland, any year</td><td data-t="plan1">—</td><td data-r="plan1">—</td></tr>
+<tr><td><strong>Plan 2</strong></td><td>England or Wales, Sept 2012 to July 2023 · Wales from Aug 2023 too</td><td data-t="plan2">—</td><td data-r="plan2">—</td></tr>
+<tr><td><strong>Plan 4</strong></td><td>Scotland — loans through SAAS</td><td data-t="plan4">—</td><td data-r="plan4">—</td></tr>
+<tr><td><strong>Plan 5</strong></td><td>England only, courses starting on or after 1 Aug 2023</td><td data-t="plan5">—</td><td data-r="plan5">—</td></tr>
+<tr><td><strong>Postgraduate</strong></td><td>England or Wales master's and doctoral loans</td><td data-t="postgrad">—</td><td data-r="postgrad">—</td></tr>
+</table>
+</div>
+
+<div class="note">
+<p><strong>Plan 5 has the lowest threshold of the lot.</strong> That is
+counter-intuitive — it is the newest plan, and it starts taking money earlier
+than Plan 2 does. On the same salary a Plan 5 borrower repays more each month
+than a Plan 2 borrower, from the first pound over the line.</p>
+</div>
+
+<div class="note">
+<p><strong>A postgraduate loan does not replace your undergraduate one.</strong>
+If you have both, both are deducted, each against its own threshold. That
+catches people who assume the later loan supersedes the earlier one.</p>
+</div>
+
+<h2>Things the three questions cannot see</h2>
+
+<p>Where you were living when you <em>applied</em> is what counts, not where
+you studied — a Scottish student at an English university is normally Plan 4 — and Scottish income tax differs too, which the <a href="https://truetakehome.co.uk/scottish-income-tax-calculator/">Scottish income tax calculator</a> covers.
+Northern Ireland has stayed on Plan 1 throughout. And Wales did not follow
+England onto Plan 5: Welsh students starting after August 2023 remain Plan 2.</p>
+
+<p>If you have loans from more than one period you can be on more than one
+plan at once, and each is collected separately. The <a href="https://truetakehome.co.uk/income-tax-calculator/">income tax calculator</a> shows tax, NI and both loans on one salary.</p>
+
+
+<h2>Related calculators</h2>
+
+<p>A student loan deduction never sits on its own — it comes off the same pay
+as tax, National Insurance and pension, and the plan threshold interacts with
+all of them.</p>
+
+<ul>
+  <li><a href="https://truetakehome.co.uk/">Take-home pay calculator</a> — tax, NI, pension and student loan on one salary</li>
+  <li><a href="https://truetakehome.co.uk/student-loan-repayment-calculator/">Student loan repayment calculator</a> — the 9% deduction month by month</li>
+  <li><a href="https://truetakehome.co.uk/pay-rise-calculator/">Pay rise calculator</a> — how much of a raise survives once a threshold is crossed</li>
+  <li><a href="https://truetakehome.co.uk/national-insurance-calculator/">National Insurance calculator</a> — NI on the same earnings the loan is taken from</li>
+  <li><a href="https://truetakehome.co.uk/scottish-income-tax-calculator/">Scottish income tax calculator</a> — Plan 4 borrowers pay Scottish income tax as well</li>
+  <li><a href="https://truetakehome.co.uk/self-employed-tax-calculator/">Self-employed tax calculator</a> — loans are collected through Self Assessment, not payroll</li>
+  <li><a href="https://truetakehome.co.uk/second-job-tax-calculator/">Second job tax calculator</a> — a second income counts towards the same threshold</li>
+  <li><a href="https://truetakehome.co.uk/payslip-checker/">Payslip checker</a> — check a deduction that looks wrong on the slip</li>
+  <li><a href="https://truetakehome.co.uk/salary-percentile-calculator/">Salary percentile calculator</a> — where your salary sits against the thresholds above</li>
+  <li><a href="https://truetakehome.co.uk/hourly-wage-calculator/">Hourly wage calculator</a> — if you are paid hourly rather than salaried</li>
+</ul>
+
+<h2>What it costs on your salary</h2>
+
+<p>This page tells you the plan. The
+<a href="https://truetakehome.co.uk/student-loan-repayment-calculator/">student
+loan repayment calculator</a> puts a salary against it and shows the monthly
+deduction, and the
+<a href="https://truetakehome.co.uk/">take-home pay calculator</a> shows it
+alongside tax, National Insurance and pension so you see the real net figure.</p>
+
+<p>If you are near a threshold, the
+<a href="https://truetakehome.co.uk/pay-rise-calculator/">pay rise
+calculator</a> is worth a look — crossing a student loan threshold adds 9% to
+your marginal rate on top of tax and NI, which is why some raises feel
+smaller than they are. The <a href="https://truetakehome.co.uk/bonus-tax-calculator/">bonus tax calculator</a> and the <a href="https://truetakehome.co.uk/overtime-tax-calculator/">overtime tax calculator</a> both show the same squeeze on one-off payments.</p>
+
+<p>Thresholds here are read live from
+<a href="https://github.com/HadiDevLabx/uk-tax-rates">uk-tax-rates</a>, a free
+CC BY 4.0 dataset. Related:
+<a href="https://dev-lab-x.github.io/uk-tax-year-changes/">what changed this
+tax year</a> and the
+<a href="https://hadidevlabx.github.io/uk-tax-code/">tax code decoder</a>.</p>
+
+<div class="note">
+<p><strong>A guide, not a determination.</strong> The Student Loans Company
+and your online repayment account are authoritative for your own loan. Edge
+cases exist — transferred courses, EU students, pre-1998 mortgage-style loans
+— that three questions cannot cover.</p>
+</div>
+
+<footer>
+<p>Built alongside <a href="https://truetakehome.co.uk/">True Take-Home</a></p>
+</footer>
+
+</div>
+
+<script>
+// Fallback thresholds, replaced at load from the dataset. The page must answer
+// with the network blocked, so nothing waits on the fetch.
+var PLANS = {
+  plan1:    { label: "Plan 1", threshold: 26900, rate: 0.09 },
+  plan2:    { label: "Plan 2", threshold: 29385, rate: 0.09 },
+  plan4:    { label: "Plan 4", threshold: 33795, rate: 0.09 },
+  plan5:    { label: "Plan 5", threshold: 25000, rate: 0.09 },
+  postgrad: { label: "Postgraduate Loan", threshold: 21000, rate: 0.06 }
+};
+var YEAR = "2026/27";
+
+var gbp = function (n) { return "£" + n.toLocaleString("en-GB"); };
+var pct = function (r) { return Math.round(r * 1000) / 10 + "%"; };
+
+/**
+ * Which plan applies. Nation is where you LIVED when you applied, not where
+ * you studied.
+ *
+ * The two rules people get wrong are both here: Northern Ireland never left
+ * Plan 1, and Wales did not follow England onto Plan 5 — Welsh students
+ * starting after August 2023 stay on Plan 2. Scotland is Plan 4 for every
+ * year, since Scottish borrowers moved across in April 2021.
+ */
+function planFor(nation, when, level) {
+  if (level === "pg") {
+    return (nation === "england" || nation === "wales") ? "postgrad" : null;
+  }
+  if (nation === "scotland") return "plan4";
+  if (nation === "ni") return "plan1";
+  if (when === "pre2012") return "plan1";
+  if (when === "2012to2023") return "plan2";
+  return nation === "england" ? "plan5" : "plan2"; // Wales stays on Plan 2
+}
+
+var NOTES = {
+  plan1: "Plan 1 has the older, lower threshold. Northern Ireland has stayed on it throughout.",
+  plan2: "Plan 2 covers the 2012 fee rise. Wales kept it for new students after August 2023 rather than following England to Plan 5.",
+  plan4: "Plan 4 is for loans through the Student Awards Agency Scotland. It has the highest threshold of any plan, so you repay less on the same salary than on any other.",
+  plan5: "Plan 5 has the LOWEST threshold of all the plans, so it starts taking money earlier than Plan 2 despite being newer. Repayments began in April 2026.",
+  postgrad: "The Postgraduate Loan is collected on top of any undergraduate plan, not instead of it, and at a lower rate against its own threshold."
+};
+
+var out = document.getElementById("out");
+var form = document.getElementById("f");
+
+function val(name) {
+  return form.querySelector('input[name="' + name + '"]:checked').value;
+}
+
+function render() {
+  var nation = val("nation"), when = val("when"), level = val("level");
+  var key = planFor(nation, when, level);
+
+  if (!key) {
+    out.innerHTML = "<h2>No UK postgraduate loan plan</h2>"
+      + "<p>Postgraduate Loans are offered in England and Wales. Scotland and "
+      + "Northern Ireland fund postgraduate study differently, so there is no "
+      + "equivalent payroll deduction — check with SAAS or the Student Loans "
+      + "Company for Northern Ireland.</p>";
+    return;
+  }
+
+  var p = PLANS[key];
+  var monthly = Math.round(p.threshold / 12);
+  var h = "<h2>" + p.label + "</h2>";
+  h += "<p>" + NOTES[key] + "</p>";
+  h += "<p>You repay <strong>" + pct(p.rate) + " of everything above "
+     + gbp(p.threshold) + "</strong> a year — nothing at all on earnings below "
+     + "it. On a salary of " + gbp(p.threshold) + " the deduction is zero; every "
+     + "pound above it costs " + pct(p.rate) + ".</p>";
+  h += '<dl class="rows">'
+     + '<div class="row"><dt>Annual threshold</dt><dd>' + gbp(p.threshold) + "</dd></div>"
+     + '<div class="row"><dt>Monthly equivalent</dt><dd>' + gbp(monthly) + "</dd></div>"
+     + '<div class="row"><dt>Rate above it</dt><dd>' + pct(p.rate) + "</dd></div>"
+     + "</dl>";
+  if (level === "ug" && (nation === "england" || nation === "wales")) {
+    h += "<p style=\"font-size:.88rem\">Studied a master's or doctorate as well? "
+       + "Switch question 3 — a Postgraduate Loan is deducted <em>in addition</em> "
+       + "to this one.</p>";
+  }
+  h += '<p style="font-size:.85rem;margin-top:.9rem">' + YEAR + " thresholds</p>";
+  out.innerHTML = h;
+}
+
+function fillTable() {
+  for (var k in PLANS) {
+    var t = document.querySelector('[data-t="' + k + '"]');
+    var r = document.querySelector('[data-r="' + k + '"]');
+    if (t) t.textContent = gbp(PLANS[k].threshold);
+    if (r) r.textContent = pct(PLANS[k].rate);
+  }
+}
+
+fetch("https://cdn.jsdelivr.net/gh/HadiDevLabx/uk-tax-rates@main/data/latest.json")
+  .then(function (r) { return r.json(); })
+  .then(function (d) {
+    YEAR = d.meta.taxYear;
+    d.studentLoans.forEach(function (p) {
+      if (PLANS[p.key]) {
+        PLANS[p.key].threshold = p.threshold;
+        PLANS[p.key].rate = p.rate;
+        PLANS[p.key].label = p.label;
+      }
+    });
+    fillTable();
+    render();
+  })
+  .catch(function () { /* fallback figures stand */ });
+
+form.addEventListener("change", render);
+fillTable();
+render();
+</script>
+</body>
+</html>
